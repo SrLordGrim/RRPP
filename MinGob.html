@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <title>Ministerio de Gobierno</title>
+  <style>
+    /* Estilos generales de la página */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ff0000; /* Color azul de la bandera de Panamá */
+    }
+
+    nav {
+      background-color: white; /* Color de fondo blanco */
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background-color: #d52b1e; /* Color rojo de la bandera de Panamá */
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #0055a4; /* Color azul de la bandera de Panamá */
+    }
+
+    /* Estilos específicos de las secciones */
+    .organization,
+    .interview,
+    .introduction,
+    .slideshow,
+    .tools,
+    .measurement,
+    .communication-culture {
+      margin: 30px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: white;
+    }
+
+    .organization h2,
+    .interview h2,
+    .introduction h2,
+    .slideshow h2,
+    .tools h2,
+    .measurement h2,
+    .communication-culture h2 {
+      color: #0055a4; /* Color azul de la bandera de Panamá */
+    }
+
+    .organization .level,
+    .questions,
+    .slideshow .slideshow-container,
+    .tools .tool-description,
+    .measurement .question,
+    .communication-culture .question {
+      margin-top: 20px;
+    }
+
+    /* Estilos del acordeón */
+    .question {
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      background-color: #f9f9f9;
+      cursor: pointer;
+    }
+
+    .answer {
+      display: none;
+    }
+
+    .question.active .answer {
+      display: block;
+    }
+
+    /* Estilos del slideshow */
+    .slideshow-container {
+      max-width: 612px;
+      height: 612px;
+      margin: 0 auto; /* Centrado horizontal */
+      position: relative;
+      overflow: hidden;
+      background-color: transparent;
+    }
+
+    .slide {
+      display: none;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: transparent;
+    }
+
+    .slide img {
+      max-width: 100%;
+      max-height: 100%;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="Tigo.html">Tigo</a></li>
+      <li><a href="recomendaciones.html">Recomendación</a></li>
+    </ul>
+  </nav>  
+
+  <section class="organization">
+    <h2>Organigrama</h2>
+    <div class="level">
+        <div class="position">Ministro</div>
+        <div class="position">ViceMinistro</div>
+        <div class="position">Secretaría General</div>
+        <div class="position">Oficina de Asesoría General</div>
+        <div class="position">Oficina de Relaciones Públicas</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="interview">
+    <h2>Entrevista Transcrita con Ministerio del Gobierno</h2>
+      <div class="questions">
+        <div class="accordion">
+          <div class="question">
+            <h3>Objetivos y metas</h3>
+            <div class="answer">
+            <ul>
+          <li>¿Cuáles son los objetivos principales de la comunicación interna?</li>
+          <p>Los objetivos deben ser la claridad del mensaje, independientemente del canal de comunicación que se utilice debe ser clara.</p>
+          <li>¿Existen metas específicas que debamos considerar al diseñar el programa de relaciones públicas de comunicación interna?</li>
+          <p>Emitir información valiosa de la empresa, Contar con diversos canales de comunicación, Mejorar las relaciones entre colaboradores y participación de los trabajadores en las actividades de la organización.</p>
+        </ul>
+      </div>
+    </div>
+    <div class="accordion">
+      <div class="question">
+      <h3>Público Objetivo</h3>
+      <div class="answer">
+        <ul>
+          <li>¿Cuál es el perfil de los empleados? ¿Existen diferentes grupos o departamentos que necesiten un enfoque específico en la comunicación interna?</li>
+          <p>En relaciones públicas se debe tener habilidades sociales, aunque cabe destacar que en la oficina hay algunos colaboradores que realizan trabajo como diseño gráfico, fotografía o edición, sin embargo de igual forma deben tener facilidad comunicativa.</p>
+          <li>¿Hay alguna barrera o desafío particular al comunicarse con los empleados?</li>
+          <p>Sí, al ser grupos heterogéneos con diferentes temperamentos, caracteres, formaciones y hasta profesiones hace que el desafío sea saber comunicarse con claridad a todo el público interno.</p>
+        </ul>
+      </div>
+    </div>
+    <div class="accordion">
+      <div class="question">
+      <h3>Mensajes y Canales de Comunicación</h3>
+      <div class="answer">
+        <ul>
+          <li>¿Qué tipo de información se debe transmitir a los empleados? ¿Cuáles son los mensajes clave que se deben comunicar en el programa de relaciones públicas de comunicación interna?</li>
+          <p>Una institución pública se hace escrito a través de notas la cual pueden ser digitales.</p>
+          <li>¿Qué canales de comunicación se utilizan actualmente? ¿Se necesitan nuevos canales o ajustes existentes para mejorar la comunicación interna?</li>
+          <p>Para comunicación interna se utiliza correo electrónico institucional. En el caso que se esté en asignaciones fuera de oficina se utiliza medios digitales de mensajería como WhatsApp.</p>
+        </ul>
+      </div>
+    </div>
+    <div class="accordion">
+      <div class="question">
+      <h3>Estrategias de Comunicación</h3>
+      <div class="answer">
+        <ul>
+          <li>¿Qué estrategias de comunicación se han implementado anteriormente para fortalecer la comunicación interna? ¿Qué resultados se han obtenido?</li>
+          <p>A través de diversas reuniones para mejorar la comunicación en los eventos o actividades.</p>
+          <li>¿Existen eventos o actividades internas que puedan utilizarse como oportunidades para promover la comunicación interna?</li>
+          <p>Talleres de cuerdas o seminarios.</p>
+        </ul>
+      </div>
+    </div>
+    <div class="accordion">
+      <div class="question">
+      <h3>Evaluación y seguimiento</h3>
+      <div class="answer">
+        <ul>
+          <li>¿Cómo se evalúa actualmente la efectividad de la comunicación interna?</li>
+          <p>En la organización a la que pertenezco no se evalúa la comunicación interna.</p>
+          <li>¿Qué indicadores o métricas se utilizan para medir el éxito de los programas de relaciones públicas de comunicación interna?</li>
+          <p>No tenemos un indicador para medición de programas.</p>
+        </ul>
+      </div>
+    </div>
+</div>
+</section>
+
+<section class="introduction">
+  <h2>Propuestas para Mejorar los Canales de Comunicación en el Ministerio de Gobierno</h2>
+  <p>
+    Conocer los canales de comunicación disponibles de la organización es crucial. Uno de estos canales es el correo electrónico, pero en algunas circunstancias las personas no pueden usarlo debido a restricciones financieras. Es crucial tener en cuenta la distribución equitativa de los recursos, como las computadoras, para asegurarse de que todos los empleados puedan utilizar esta forma de comunicación de manera efectiva.
+  </p>
+  <p>
+    Los grupos de WhatsApp son otro método de comunicación mencionado. Además de la plataforma adicional que se mencionó, posiblemente "memos", a través de los cuales los superiores se comunican con sus subordinados, es crucial establecer si todos los colaboradores o funcionarios tienen acceso a estos grupos. Para asegurar el flujo de información y la cohesión interna, es fundamental que se potencie esta dinámica de comunicación entre directivos y empleados.
+  </p>
+  <p>
+    En cuanto a los posibles avances, se recomienda optimizar el presupuesto para permitir el acceso de un mayor número de usuarios a los equipos, lo que favorecerá la implementación de un portal interno, como una intranet o un portal del empleado. Estas plataformas proporcionarán un canal de comunicación centralizado y eficiente. Una excelente manera de mejorar la comunicación es colgar murales en áreas concurridas como cafeterías y áreas comunes.
+  </p>
+  <p>
+    Se recomiendan una serie de cambios para mejorar los canales de comunicación existentes y fomentar una interacción fructífera dentro de la organización. Al abordar las limitaciones financieras, maximizar el acceso a la tecnología, crear plataformas internas y utilizar elementos visuales como murales, la institución puede mejorar la comunicación en todos los niveles.
+  </p>
+</section>
+
+<section class="slideshow">
+  <div class="slideshow-container">
+    <div class="slide">
+      <img src="boletines.png" alt="Boletines" onclick="showTool('boletines')">
+    </div>
+    <div class="slide">
+      <img src="intranet.jpg" alt="Intranet" onclick="showTool('intranet')">
+    </div>
+    <div class="slide">
+      <img src="tableros.jpg" alt="Tableros para Mensajes" onclick="showTool('tableros')">
+    </div>
+    <div class="slide">
+      <img src="buzon.png" alt="Buzón de Sugerencias" onclick="showTool('buzon')">
+    </div>
+    <div class="slide">
+      <img src="encuestas.jpg" alt="Encuestas" onclick="showTool('encuestas')">
+    </div>
+  </div>
+</section>
+
+<section class="tools">
+  <div id="boletines" class="tool-description">
+    <h3>Boletines</h3>
+    <p>
+      Es una herramienta tradicional que toma la forma de un boletín, circular o gaceta que puede ser entregada personalmente a cada colaborador, enviada por correo electrónico o dejada en la recepción para que cada empleado la tome. Esto se encargará de transmitir la información con claridad y en una variedad de formas. Los boletines se pondrían en las áreas comunes como lo son las cafeterías.
+    </p>
+  </div>
+  <div id="intranet" class="tool-description">
+    <h3>Intranet</h3>
+    <p>
+      Estas plataformas proporcionarán un canal de comunicación centralizado y eficiente. Dependiendo de los requerimientos, se puede personalizar.
+    </p>
+  </div>
+  <div id="tableros" class="tool-description">
+    <h3>Tableros para Mensajes</h3>
+    <p>
+      Es imperativo establecer una sección específica para la transmisión de mensajes y anuncios dentro del entorno en cuestión. Puede usar esta área para proyectar presentaciones, comerciales y contenido audiovisual en pantallas ubicadas en ubicaciones estratégicas alrededor de la sala, así como en superficies de pizarras reales o virtuales.
+    </p>
+    <!-- ... Más detalles sobre esta herramienta ... -->
+  </div>
+  <div id="buzon" class="tool-description">
+    <h3>Buzón de Sugerencias</h3>
+    <p>
+      Esta herramienta es increíblemente esclarecedora cuando el objetivo de la estrategia de comunicación interna es comprender profundamente las percepciones y emociones que los empleados tienen en relación con la empresa, sus interacciones con sus pares, así como los temas relacionados con su avance profesional.
+    </p>
+    <!-- ... Más detalles sobre esta herramienta ... -->
+  </div>
+  <div id="encuestas" class="tool-description">
+    <h3>Encuestas</h3>
+    <p>
+      Al utilizar técnicas de comunicación interna, puede obtener una comprensión más profunda de los miembros del equipo. Estas investigaciones pueden concentrarse en temas específicos o investigar a personas específicas.
+    </p>
+    <li><a href="encuesta.html">Herramienta de Encuesta</a></li>
+    <!-- ... Más detalles sobre esta herramienta ... -->
+  </div>
+</section>
+
+<script>
+  function showTool(toolId) {
+    const toolDescription = document.getElementById(toolId);
+
+    // Ocultar todas las descripciones de herramientas
+    const allToolDescriptions = document.querySelectorAll('.tool-description');
+    allToolDescriptions.forEach((description) => {
+      description.style.display = 'none';
+    });
+
+    // Mostrar la descripción de la herramienta seleccionada
+    toolDescription.style.display = 'block';
+  }
+</script>
+
+<section class="measurement">
+  <h2>Medición de la Relación entre el Colaborador y el Medio de Comunicación</h2>
+  <div class="accordion">
+    <!-- Enfoque 1: Análisis de Contenido -->
+    <div class="question">
+      <h3>Análisis de Contenido</h3>
+      <div class="answer">
+        <p>Verifique el contenido de las apariciones en los medios de la persona. Analice la calidad, profundidad y relevancia de los artículos, entrevistas u otras contribuciones realizadas por el colaborador. Las consideraciones pueden incluir el efecto del contenido, la originalidad y el enfoque temático.</p>
+      </div>
+    </div>
+
+    <!-- Enfoque 2: Participación del Público -->
+    <div class="question">
+      <h3>Participación del Público</h3>
+      <div class="answer">
+        <p>Observe cómo responde el público en general a las colaboraciones de la persona. Esto podría implicar examinar comentarios, compartir en redes sociales, citas de medios y comentarios del público en general.</p>
+      </div>
+    </div>
+
+    <!-- Enfoque 3: Alcance y Audiencia -->
+    <div class="question">
+      <h3>Alcance y Audiencia</h3>
+      <div class="answer">
+        <p>Evaluar el alcance del colaborador en términos de redistribución y audiencia. El tamaño estimado de la audiencia, la circulación de la revista o el alcance en línea podrían usarse para cuantificar esto.</p>
+      </div>
+    </div>
+    
+    <!-- Enfoque 4: Frecuencia de Colaboración -->
+    <div class="question">
+      <h3>Frecuencia de Colaboración</h3>
+      <div class="answer">
+        <p>Verifique la frecuencia de las contribuciones de medios del colaborador durante un período de tiempo específico, como se mencionó anteriormente.</p>
+      </div>
+    </div>
+
+    <!-- Enfoque 5: Consistencia y Longevidad -->
+    <div class="question">
+      <h3>Consistencia y Longevidad</h3>
+      <div class="answer">
+        <p>Examine qué tan larga y consistente ha sido la relación. ¿La colaboración es continua o esporádica y cuánto tiempo ha estado contribuyendo el colaborador?</p>
+      </div>
+    </div>
+
+    <!-- Enfoque 6: Entrevistas y Encuestas -->
+    <div class="question">
+      <h3>Entrevistas y Encuestas</h3>
+      <div class="answer">
+        <p>Pregunte acerca de sus opiniones sobre la asociación del colaborador y los representantes de los medios. Para saber qué opina el público en general sobre la credibilidad e influencia del colaborador en el medio, también podrías realizar encuestas entre ellos.</p>
+      </div>
+    </div>
+
+    <!-- Enfoque 7: Análisis de Redes Sociales -->
+    <div class="question">
+      <h3>Análisis de Redes Sociales</h3>
+      <div class="answer">
+        <p>Considere la presencia e influencia del colaborador en las redes sociales, incluida la cantidad de seguidores, interacciones y menciones en los medios de las colaboraciones.</p>
+      </div>
+    </div>
+
+    <!-- Enfoque 8: Análisis de Medios Comparativos -->
+    <div class="question">
+      <h3>Análisis de Medios Comparativos</h3>
+      <div class="answer">
+        <p>Compare las relaciones e interacciones de las personas con diferentes tipos de medios para ver cómo les afectan y cómo contribuyen en diferentes situaciones.</p>
+      </div>
+    </div>
+
+    <!-- Enfoque 9: Calidad de las Relaciones Profesionales -->
+    <div class="question">
+      <h3>Calidad de las Relaciones Profesionales</h3>
+      <div class="answer">
+        <p>Evaluar la calidad de la relación entre el coordinador y el informante. Esto puede incluir comunicación, colaboración, retroalimentación y eficiencia.</p>
+      </div>
+    </div>
+
+    <!-- Enfoque 10: Análisis de Impacto -->
+    <div class="question">
+      <h3>Análisis de Impacto</h3>
+      <div class="answer">
+        <p>Analice el impacto práctico de la interacción humana en el medio ambiente y en todas las industrias. Esto puede incluir reconocimiento social, premios.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="communication-culture">
+  <h2>Cultura de Comunicación Activa</h2>
+  <div class="accordion">
+    <!-- Enfoque 1: Campañas de Información -->
+    <div class="question">
+      <div class="question">
+        <h3>Campañas de Información</h3>
+      </div>
+      <div class="answer">
+        <p>Creación y difusión de campañas informativas sobre políticas públicas, programas sociales, regulaciones, cambios en la ley, entre otros temas de interés público.</p>
+      </div>
+    </div>
+
+    <!-- Enfoque 2: Boletines Informativos -->
+    <div class="question">
+      <div class="question">
+        <h3>Boletines Informativos</h3>
+      </div>
+      <div class="answer">
+        <p>Enviar boletines electrónicos periódicos por correo electrónico a los ciudadanos suscritos, brindando actualizaciones sobre las acciones y decisiones de la institución.</p>
+      </div>
+    </div>
+
+    <!-- Enfoque 3: Eventos Comunitarios -->
+    <div class="question">
+      <div class="question">
+        <h3>Eventos Comunitarios</h3>
+      </div>
+      <div class="answer">
+        <p>Organizar talleres, seminarios, foros y reuniones públicas para informar a la comunidad sobre temas relevantes y promover el diálogo.</p>
+      </div>
+    </div>
+
+    <!-- Enfoque 4: Encuestas y Sondeos -->
+    <div class="question">
+      <div class="question">
+        <h3>Encuestas y Sondeos</h3>
+      </div>
+      <div class="answer">
+        <p>Realizar encuestas de opinión pública para comprender las necesidades y expectativas de la ciudadanía, así como para evaluar la satisfacción con los servicios y programas ofrecidos.</p>
+      </div>
+    </div>
+
+    <!-- Enfoque 5: Materiales Impresos -->
+    <div class="question">
+      <div class="question">
+        <h3>Materiales Impresos</h3>
+      </div>
+      <div class="answer">
+        <p>Distribuir folletos, panfletos, carteles y otros materiales impresos en lugares públicos para divulgar información importante.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+// Script del acordeón
+const questions = document.querySelectorAll('.question');
+
+questions.forEach((question) => {
+  const questionHeader = question.querySelector('.question');
+  const answer = question.querySelector('.answer');
+
+  questionHeader.addEventListener('click', () => {
+    question.classList.toggle('active');
+    if (answer.style.display === 'block') {
+      answer.style.display = 'none';
+    } else {
+      answer.style.display = 'block';
+    }
+  });
+});
+
+
+  // Script para mostrar descripciones de herramientas
+  function showTool(toolId) {
+    const toolDescription = document.getElementById(toolId);
+
+    const allToolDescriptions = document.querySelectorAll('.tool-description');
+    allToolDescriptions.forEach((description) => {
+      description.style.display = 'none';
+    });
+
+    toolDescription.style.display = 'block';
+  }
+</script>
+
+</body>
+</html>

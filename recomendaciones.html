@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <title>Recomendaciones Generales</title>
+</head>
+<body style="background-color: #000;">
+    <nav style="text-align: center;">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Tigo.html">Tigo</a></li>
+            <li><a href="MinGob.html">Ministerio de Gobierno</a></li>
+        </ul>
+      </nav>
+
+    <h2>Recomendaciones Generales</h2>
+    <div class="recommendation">
+      <h3 class="recommendation-title">Fomentar la apertura y la transparencia</h3>
+      <p>Establecer una cultura organizacional que valore la honestidad y la transparencia en la comunicación. Los líderes deben compartir información relevante sobre la dirección de la empresa, los cambios organizacionales y las metas a alcanzar.</p>
+    </div>
+    <div class="recommendation">
+      <h3 class="recommendation-title">Capacitación en habilidades de comunicación</h3>
+      <p>Brindar capacitación en comunicación para líderes y empleados. Esto aumenta la claridad, la empatía y la eficiencia en la comunicación en toda la organización.</p>
+    </div>
+    <div class="recommendation">
+      <h3 class="recommendation-title">Establecer metas claras y medibles</h3>
+      <p>Definir objetivos claros y medir su eficacia periódicamente. Esto puede incluir métricas como asistencia a reuniones, uso de intranet y comentarios de los empleados.</p>
+    </div>
+    <div class="recommendation">
+      <h3 class="recommendation-title">Evaluar y ajustar</h3>
+      <p>Regularmente evaluar la efectividad de las iniciativas de comunicación interna y ajustar las estrategias según los resultados obtenidos y las necesidades cambiantes de la organización.</p>
+    </div>
+    <div class="recommendation">
+      <h3 class="recommendation-title">Modelar liderazgo comunicativo</h3>
+      <p>Los líderes deben dar ejemplo al ser comunicativos, receptivos y dispuestos a escuchar. Un liderazgo comunicativo fomenta una cultura de diálogo en toda la organización.</p>
+    </div>
+  </section>
+
+  <style>
+    /* Estilos para la sección de recomendaciones generales */
+    .h2 {
+      color: #333;
+    }
+
+    .recommendation {
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      background-color: #fff;
+    }
+
+    .recommendation h3 {
+      margin-top: 0;
+      color: #ff0000; /* Rojo */
+      cursor: pointer;
+    }
+
+    .recommendation p {
+      display: none;
+    }
+
+    .recommendation.active p {
+      display: block;
+    }
+
+    p {
+      color: #0000ff; /* Azul */
+    }
+  </style>
+
+  <script>
+    const recommendationTitles = document.querySelectorAll(".recommendation-title");
+
+    recommendationTitles.forEach((title) => {
+      title.addEventListener("click", () => {
+        title.parentElement.classList.toggle("active");
+      });
+    });
+  </script>
+
+</body>
+</html>
